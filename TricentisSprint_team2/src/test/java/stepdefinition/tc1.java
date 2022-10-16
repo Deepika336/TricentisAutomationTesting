@@ -25,7 +25,7 @@ public class tc1 extends Screenshots{
 	@Given("user is in Tricentis Home page")
 	public void user_is_in_tricentis_home_page() {
 		
-		System.setProperty("webdriver.edge.driver","C:\\Users\\Hp\\OneDrive\\Documents\\selenium\\selenium demo\\TricentisSprint_team2\\src\\test\\resources\\drivers\\msedgedriver.exe");
+		System.setProperty("webdriver.edge.driver","C:\\Users\\Hp\\git\\repository3\\TricentisSprint_team2\\src\\test\\resources\\drivers\\msedgedriver.exe");
 		driver=new EdgeDriver();
 		 
 		startReport();

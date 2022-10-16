@@ -39,7 +39,7 @@ public class Tc6_ChoosePriceOption extends Screenshots {
 	@Given("when user enters valid vehicle data")
 	public void when_user_enters_valid_vehicle_data() throws IOException {
 		startTest();
-		System.setProperty("webdriver.edge.driver","C:\\Users\\Hp\\OneDrive\\Documents\\selenium\\selenium demo\\Tricentis_sprint2\\src\\test\\resources\\drivers\\msedgedriver.exe");
+		System.setProperty("webdriver.edge.driver","C:\\Users\\Hp\\git\\repository3\\TricentisSprint_team2\\src\\test\\resources\\drivers\\msedgedriver.exe");
 		driver=new EdgeDriver();
 		
 		driver.get("http://sampleapp.tricentis.com/101/index.php");

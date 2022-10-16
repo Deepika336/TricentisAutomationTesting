@@ -30,7 +30,7 @@ public class Tc4_ValidCamperInsurantData extends Screenshots {
 	@Given("when user is in Tricentis home page")
 	public void when_user_is_in_tricentis_home_page() {
 		    startTest();
-			System.setProperty("webdriver.edge.driver","C:\\Users\\Hp\\OneDrive\\Documents\\selenium\\selenium demo\\TricentisSprint_team2\\src\\test\\resources\\drivers\\msedgedriver.exe");
+			System.setProperty("webdriver.edge.driver","C:\\Users\\Hp\\git\\repository3\\TricentisSprint_team2\\src\\test\\resources\\drivers\\msedgedriver.exe");
 			driver=new EdgeDriver();
 			cv=new CamperInsurantData(driver);
 			

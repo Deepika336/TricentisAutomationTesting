@@ -8,7 +8,7 @@ import java.time.Duration;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
@@ -36,8 +36,8 @@ public class Tc8_SendQuote extends Screenshots{
 	@Given("user Enters the valid Vehicle data")
 	public void user_enters_the_valid_vehicle_data() {
 		startTest();
-		System.setProperty("webdriver.edge.driver","C:\\Users\\Hp\\OneDrive\\Documents\\selenium\\selenium demo\\Tricentis_sprint2\\src\\test\\resources\\drivers\\msedgedriver.exe");
-		driver=new EdgeDriver();
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\Hp\\git\\repository3\\TricentisSprint_team2\\src\\test\\resources\\drivers\\chromedriver.exe");
+		driver=new ChromeDriver();
 		
 		driver.get("http://sampleapp.tricentis.com/101/index.php");
 		driver.manage().window().maximize();		

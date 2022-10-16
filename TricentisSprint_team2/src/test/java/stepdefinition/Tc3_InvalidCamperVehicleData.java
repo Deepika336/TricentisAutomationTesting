@@ -28,7 +28,7 @@ public class Tc3_InvalidCamperVehicleData extends Screenshots{
 	@Given("when user is in tricentis Home page")
 	public void when_user_is_in_tricentis_home_page() {
 		startTest();
-		System.setProperty("webdriver.edge.driver","C:\\Users\\Hp\\OneDrive\\Documents\\selenium\\selenium demo\\Tricentis_sprint2\\src\\test\\resources\\drivers\\msedgedriver.exe");
+		System.setProperty("webdriver.edge.driver","C:\\Users\\Hp\\git\\repository3\\TricentisSprint_team2\\src\\test\\resources\\drivers\\msedgedriver.exe");
 		driver=new EdgeDriver();
 		cv=new CamperVehicleData(driver);
 		
