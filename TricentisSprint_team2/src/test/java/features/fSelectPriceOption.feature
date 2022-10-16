@@ -1,6 +1,6 @@
 Feature: Selecting price option for Camper
 @PriceOptionCamper
-Scenario Outline: Selecting a price option for Camper
+Scenario: Selecting a price option for Camper after entering valid details
 Given when user enters valid vehicle data 
 And user enters valid insurant data
 And user enters valid product data

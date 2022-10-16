@@ -1,4 +1,4 @@
-Feature: Entering invalid vehicle data for Camper
+Feature: Entering vehicle data for Camper
 @InvalidVehicleDataCamper
 Scenario Outline: Entering invalid vehicle data for Camper
 Given when user is in tricentis Home page

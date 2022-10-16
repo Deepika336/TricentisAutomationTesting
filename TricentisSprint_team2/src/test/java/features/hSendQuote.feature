@@ -1,6 +1,6 @@
 Feature: Send Quote for Camper
 @sendQuoteCamper
-Scenario Outline: Sending quote for Camper
+Scenario: Sending quote for Camper after selecting a price option
 Given user Enters the valid Vehicle data 
 And user Enters the valid Insurant data
 And user Enters the valid Product data
