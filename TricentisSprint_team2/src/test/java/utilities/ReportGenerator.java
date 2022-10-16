@@ -11,7 +11,7 @@ public class ReportGenerator {
 	public static int i = 1;
 
 	public void startReport() {
-		extent = new ExtentReports("C:\\Users\\Hp\\OneDrive\\Documents\\selenium\\selenium demo\\TricentisSprint_team2\\Reports\\Tricentis.html",
+		extent = new ExtentReports("C:\\Users\\Hp\\git\\repository3\\TricentisSprint_team2\\src\\test\\resources\\Reports\\Tricentis.html",
 				true);
 	}
 	
