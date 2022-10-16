@@ -117,6 +117,9 @@ public class Tc6_ChoosePriceOption extends Screenshots {
 	
 	@Then("User navigates To Send Quote window of Camper")
 	public void user_navigates_to_send_quote_window_of_camper() {
+		String a=driver.findElement(By.xpath("//a[@id='selectpriceoption']//child::span")).getText();
+		boolean res=a.equals("0");
+		assertEquals(true,res); 
 		cv4.clickNextBtn();
 		driver.close();
 		endTest();

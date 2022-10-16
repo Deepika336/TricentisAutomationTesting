@@ -61,15 +61,16 @@ public class Tc5_ValidCamperProductData extends Screenshots {
 		  takeScreenshot(driver);
 		  
 		  Thread.sleep(3000);
-		  String a=driver.findElement(By.xpath("//a[@id='enterproductdata']//child::span")).getText();
-		  boolean res=a.equals("0");
-		  assertEquals(true,res); 
+		 
 	}
 	@Then("he can click on next To Enter insurant data")
 	public void he_can_click_on_next_to_enter_insurant_data() {
+		String a=driver.findElement(By.xpath("//a[@id='enterproductdata']//child::span")).getText();
+		boolean res=a.equals("0");
+		assertEquals(true,res);
 		pd.clickNext();
-	   driver.close();
-	   endTest();
+	    driver.close();
+	    endTest();
        
 	   
 	}
