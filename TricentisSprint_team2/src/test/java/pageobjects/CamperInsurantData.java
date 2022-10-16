@@ -15,10 +15,8 @@ WebElement btn;
 @FindBy(id="firstname")
 WebElement fname;
 
-
 @FindBy(id="lastname")
 WebElement lname;
-
 
 @FindBy(id="birthdate")
 WebElement DOB;
@@ -29,13 +27,26 @@ WebElement address;
 @FindBy(id="country")
 WebElement country;
 
-
 @FindBy(id="zipcode")
 WebElement zipcode;
 
-
 @FindBy(id="occupation")
 WebElement occupation;
+
+@FindBy(xpath="//input[@id='cliffdiving']//following::span[@class='ideal-check']")
+WebElement cliff;
+
+@FindBy(xpath="//input[@id='speeding']//following::span[@class='ideal-check']")
+WebElement speeding;
+
+@FindBy(xpath="//input[@id='bungeejumping']//following::span[@class='ideal-check']")
+WebElement bungee;
+
+@FindBy(xpath="//input[@id='skydiving']//following::span[@class='ideal-check']")
+WebElement skyDiving;
+
+@FindBy(xpath="//input[@id='skydiving']//following::span[@class='ideal-check']")
+WebElement other;
 
 @FindBy(id="nextenterproductdata")
 WebElement next;
@@ -86,19 +97,19 @@ public void selectOccupation(String s) {
 
 public void selectHobbies(String hobbies) {
 	if(hobbies.equals("cliffdiving")) {
-	driver.findElement(By.xpath("//input[@id='cliffdiving']//following::span[@class='ideal-check']")).click();
-	}
+	    cliff.click();
+	    }
 	if(hobbies.equals("speeding")) {
-		driver.findElement(By.xpath("//input[@id='speeding']//following::span[@class='ideal-check']")).click();
+		speeding.click();
 		}
 	if(hobbies.equals("bungeejumping")) {
-		driver.findElement(By.xpath("//input[@id='bungeejumping']//following::span[@class='ideal-check']")).click();
+		bungee.click();
 		}
 	if(hobbies.equals("skydiving")) {
-		driver.findElement(By.xpath("//input[@id='skydiving']//following::span[@class='ideal-check']")).click();
+		skyDiving.click();
 		}
 	if(hobbies.equals("other")) {
-		driver.findElement(By.xpath("//input[@id='other']//following::span[@class='ideal-check']")).click();
+		other.click();
 		}
 	
 	
@@ -107,10 +118,5 @@ public void selectHobbies(String hobbies) {
 public void clicknext() {
 	next.click();
 }
-
-
-
-
-
 
 }
